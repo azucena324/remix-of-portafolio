@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Reveal, SectionTitle } from "./Reveal";
 import { PROFILE } from "./data";
-import { Mail, Send, Youtube, CheckCircle2, Loader2 } from "lucide-react";
+import { Mail, Send, Youtube, CheckCircle2, Loader2, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 export function Contact() {
@@ -51,6 +51,24 @@ export function Contact() {
                 {PROFILE.tagline}. Escríbeme y conversemos sobre tu próximo video.
               </p>
               <div className="grid gap-3">
+                <a
+                  href={PROFILE.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-center gap-4 rounded-2xl border border-border bg-secondary/25 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:glow-soft"
+                >
+                  <span className="inline-flex size-10 items-center justify-center rounded-xl bg-primary/25 text-lilac transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                    <MessageCircle className="size-5" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground">
+                      WhatsApp
+                    </span>
+                    <span className="block truncate text-sm text-foreground">
+                      Escríbeme por WhatsApp
+                    </span>
+                  </span>
+                </a>
                 <a
                   href={`mailto:${PROFILE.email}`}
                   className="group flex items-center gap-4 rounded-2xl border border-border bg-secondary/25 p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-primary hover:glow-soft"
