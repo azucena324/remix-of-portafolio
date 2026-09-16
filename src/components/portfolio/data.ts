@@ -7,6 +7,7 @@ export const PROFILE = {
     "Soy Victoria, una apasionada de la edición de video desde pequeña. Me encanta transformar clips en historias creativas, usando colores, ritmo y emoción para conectar con las personas.",
   email: "azucenaandino91@gmail.com",
   youtube: "https://www.youtube.com/@syxmusic-o1e",
+  whatsapp: "https://wa.link/rh8q9u",
 };
 
 export const ABOUT = [
@@ -74,20 +75,20 @@ export type EditVideo = {
 export const EDIT_VIDEOS: EditVideo[] = [
   {
     id: "v1",
-    title: "Anuncio publicitario de producto 1",
-    style: "Publicitario",
+    title: "Edición 01",
+    style: "Edición de video",
     src: "https://videotourl.com/videos/1789571448948-5c991b9d-f167-4279-9506-2605c2fc365d.mp4",
   },
   {
     id: "v2",
-    title: "Anuncio publicitario de producto 2",
-    style: "Publicitario",
+    title: "Edición 02",
+    style: "Edición de video",
     src: "https://videotourl.com/videos/1789571518035-a61e7c2c-b2b6-417c-a45d-36a5f2660e9b.mp4",
   },
   {
     id: "v3",
-    title: "Anuncio publicitario de producto 3",
-    style: "Publicitario",
+    title: "Edición 03",
+    style: "Edición de video",
     src: "https://videotourl.com/videos/1789571546868-cb38172f-6bc6-4354-a204-70d4b440fbcb.mp4",
   },
 ];
