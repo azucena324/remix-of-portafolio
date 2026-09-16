@@ -70,7 +70,7 @@ export type EditVideo = {
   src: string;
 };
 
-// Videos de edición de Vicky (vista previa directa en la página)
+// Videos de edición de Victoria (vista previa directa en la página)
 export const EDIT_VIDEOS: EditVideo[] = [
   {
     id: "v1",
