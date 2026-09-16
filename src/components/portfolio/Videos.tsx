@@ -17,8 +17,8 @@ export function Videos() {
           <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground">Edición de video</p>
           <h2 className="mt-3 font-display text-3xl md:text-5xl font-bold">Mis videos</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Me adapto a cualquier estilo de video: musical, publicitario, para redes o lo que tu
-            proyecto necesite. Mira algunos de mis trabajos aquí mismo.
+            Me adapto a cualquier estilo de video: musical, para redes o lo que tu proyecto
+            necesite. Mira algunas de mis ediciones aquí mismo.
           </p>
         </motion.div>
 
