@@ -5,3 +5,4 @@
 - [x] Reescribir el lema: "Ediciones, anuncios y diseño de páginas"
 - [x] Videos: quitar "anuncio publicitario", ahora "Edición 01/02/03"
 - [x] Contacto: añadir botón a WhatsApp (https://wa.link/rh8q9u)
+- [x] Galería en teléfono: 2 trabajos por fila (antes 1, ocupaban casi toda la pantalla)
