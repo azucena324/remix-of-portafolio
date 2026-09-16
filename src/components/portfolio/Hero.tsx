@@ -3,9 +3,9 @@ import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { ArrowDownRight, Mail, Play } from "lucide-react";
 import { PROFILE } from "./data";
 
-import heroPhoto from "@/assets/vicky-hero.png.asset.json";
+import heroPhoto from "@/assets/vicky-hero.png";
 
-const HERO_PHOTO: string | null = heroPhoto.url;
+const HERO_PHOTO: string | null = heroPhoto;
 
 export function Hero() {
   const go = (id: string) =>
