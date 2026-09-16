@@ -50,7 +50,7 @@ export function Gallery() {
           ))}
         </Reveal>
 
-        <div className="columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">
+        <div className="columns-2 gap-3 sm:columns-2 sm:gap-5 lg:columns-3 [&>*]:mb-3 [&>*]:break-inside-avoid sm:[&>*]:mb-5">
           {items.map((w, i) => (
             <Reveal key={w.id} delay={i * 0.06}>
               <button
@@ -64,11 +64,11 @@ export function Gallery() {
                   className="w-full transition-transform duration-700 group-hover:scale-105"
                 />
                 <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/85 to-transparent" />
-                <span className="pointer-events-none absolute inset-x-0 bottom-0 p-5 text-left">
-                  <span className="block text-[0.6rem] font-semibold uppercase tracking-[0.3em] text-primary">
+                <span className="pointer-events-none absolute inset-x-0 bottom-0 p-2.5 text-left sm:p-5">
+                  <span className="block text-[0.5rem] font-semibold uppercase tracking-[0.18em] text-primary sm:text-[0.6rem] sm:tracking-[0.3em]">
                     {w.category}
                   </span>
-                  <span className="mt-1.5 block text-sm font-semibold text-foreground">
+                  <span className="mt-1 block text-xs leading-snug font-semibold text-foreground sm:mt-1.5 sm:text-sm">
                     {w.title}
                   </span>
                 </span>
