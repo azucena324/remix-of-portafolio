@@ -1,14 +1,14 @@
 import { PROFILE } from "./data";
-import adFashion from "@/assets/ad-fashion.jpg.asset.json";
-import adPizza from "@/assets/ad-pizza.jpg.asset.json";
-import adFeel from "@/assets/ad-feel.jpg.asset.json";
-import lyric from "@/assets/lyric-cant-sleep.jpg.asset.json";
-import ytFadeOut from "@/assets/youtube-fade-out.jpg.asset.json";
-import adCentella from "@/assets/ad-centella.png.asset.json";
-import adAdidas from "@/assets/ad-adidas.png.asset.json";
-import adPina from "@/assets/ad-pina.png.asset.json";
-import adAnillos from "@/assets/ad-anillos.png.asset.json";
-import adFashionKids from "@/assets/ad-fashion-kids.png.asset.json";
+import adFashion from "@/assets/ad-fashion.jpg";
+import adPizza from "@/assets/ad-pizza.jpg";
+import adFeel from "@/assets/ad-feel.jpg";
+import lyric from "@/assets/lyric-cant-sleep.jpg";
+import ytFadeOut from "@/assets/youtube-fade-out.jpg";
+import adCentella from "@/assets/ad-centella.png";
+import adAdidas from "@/assets/ad-adidas.png";
+import adPina from "@/assets/ad-pina.png";
+import adAnillos from "@/assets/ad-anillos.png";
+import adFashionKids from "@/assets/ad-fashion-kids.png";
 
 export type Work = {
   id: string;
@@ -27,7 +27,7 @@ export const WORKS: Work[] = [
     category: "Música",
     description:
       "Video de letra oficial para mi canal de música: voces con IA, edición completa y lyrics animados sincronizados.",
-    image: ytFadeOut.url,
+    image: ytFadeOut,
     link: PROFILE.youtube,
     linkLabel: "Ver en YouTube",
   },
@@ -37,7 +37,7 @@ export const WORKS: Work[] = [
     category: "Música",
     description:
       "Diseño y sincronización de lyrics animados con tipografías mezcladas para un tema lento y emocional.",
-    image: lyric.url,
+    image: lyric,
     link: PROFILE.youtube,
     linkLabel: "Ver en YouTube",
   },
@@ -47,7 +47,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Anuncio de calzado infantil talla 25 al 30: composición con tipografía repetida, alto contraste y foco en el producto.",
-    image: adFashion.url,
+    image: adFashion,
     link: null,
   },
   {
@@ -56,7 +56,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Pieza publicitaria de comida con recortes, sombras y tipografía superpuesta para dar apetito y movimiento.",
-    image: adPizza.url,
+    image: adPizza,
     link: null,
   },
   {
@@ -65,7 +65,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Anuncio de suplementos en tonos lila: composición limpia, reflejo del producto y estilo minimalista.",
-    image: adFeel.url,
+    image: adFeel,
     link: null,
   },
   {
@@ -74,7 +74,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Anuncio de crema facial en tonos verdes: beneficios con flechas curvas, tipografía bold y composición diagonal.",
-    image: adCentella.url,
+    image: adCentella,
     link: null,
   },
   {
@@ -83,7 +83,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Anuncio de tenis Adidas en verde menta: tipografía vertical gigante, descripción del producto y estilo fresco y elegante.",
-    image: adAdidas.url,
+    image: adAdidas,
     link: null,
   },
   {
@@ -92,7 +92,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Pieza navideña de postre con luces cálidas, personajes ilustrados y tipografía grande sobre la fotografía del producto.",
-    image: adPina.url,
+    image: adPina,
     link: null,
   },
   {
@@ -101,7 +101,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Anuncio de joyería en tonos rojos: composición dividida, tipografía superpuesta y etiqueta de precio como detalle.",
-    image: adAnillos.url,
+    image: adAnillos,
     link: null,
   },
   {
@@ -110,7 +110,7 @@ export const WORKS: Work[] = [
     category: "Anuncios",
     description:
       "Anuncio de zapatillas deportivas infantiles en azul: tipografía repetida de gran formato y foco total en el producto.",
-    image: adFashionKids.url,
+    image: adFashionKids,
     link: null,
   },
 ];
