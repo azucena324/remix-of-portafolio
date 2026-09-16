@@ -55,7 +55,7 @@ export function Gallery() {
             <Reveal key={w.id} delay={i * 0.06}>
               <button
                 onClick={() => setIndex(i)}
-                className="group relative block w-full overflow-hidden rounded-3xl border border-border transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/70 hover:glow-strong"
+                className="group relative block w-full overflow-hidden rounded-2xl border border-border transition-all duration-500 hover:-translate-y-1.5 hover:border-primary/70 hover:glow-strong sm:rounded-3xl"
               >
                 <img
                   src={w.image}
