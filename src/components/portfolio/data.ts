@@ -4,7 +4,7 @@ export const PROFILE = {
   tagline: "Ediciones que conectan con tu audiencia",
   subject: "Edición de Video Creativa",
   intro:
-    "Soy Vicky, una apasionada de la edición de video desde pequeña. Me encanta transformar clips en historias creativas, usando colores, ritmo y emoción para conectar con las personas.",
+    "Soy Victoria, una apasionada de la edición de video desde pequeña. Me encanta transformar clips en historias creativas, usando colores, ritmo y emoción para conectar con las personas.",
   email: "azucenaandino91@gmail.com",
   youtube: "https://www.youtube.com/@syxmusic-o1e",
 };
