@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Ediciones, anuncios y páginas web que conectan con tu audiencia. Portafolio de edición de video creativa.",
+          "Ediciones, anuncios y diseño de páginas. Portafolio de edición de video creativa de Victoria Andino.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
