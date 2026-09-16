@@ -59,7 +59,7 @@ export function Gallery() {
               >
                 <img
                   src={w.image}
-                  alt={`${w.title} — trabajo de edición de Vicky Andino`}
+                  alt={`${w.title} — trabajo de edición de Victoria Andino`}
                   loading="lazy"
                   className="w-full transition-transform duration-700 group-hover:scale-105"
                 />
