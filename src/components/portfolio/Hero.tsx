@@ -60,7 +60,7 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="text-[clamp(2.6rem,8vw,5.5rem)] font-semibold leading-[0.95]"
           >
-            <span className="block text-foreground">{PROFILE.name.split(" ")[0].toUpperCase()}</span>
+            <span className="block text-foreground">{(PROFILE.name.split(" ")[0] ?? "").toUpperCase()}</span>
             <span className="block text-gradient-violet">ANDINO</span>
           </motion.h1>
 
