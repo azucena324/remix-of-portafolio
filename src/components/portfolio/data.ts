@@ -1,7 +1,7 @@
 export const PROFILE = {
-  name: "Vicky Andino",
+  name: "Victoria Andino",
   role: "Editora de videos",
-  tagline: "Ediciones que conectan con tu audiencia",
+  tagline: "Ediciones, anuncios y páginas web que conectan con tu audiencia",
   subject: "Edición de Video Creativa",
   intro:
     "Soy Victoria, una apasionada de la edición de video desde pequeña. Me encanta transformar clips en historias creativas, usando colores, ritmo y emoción para conectar con las personas.",
@@ -70,7 +70,7 @@ export type EditVideo = {
   src: string;
 };
 
-// Videos de edición de Vicky (vista previa directa en la página)
+// Videos de edición de Victoria (vista previa directa en la página)
 export const EDIT_VIDEOS: EditVideo[] = [
   {
     id: "v1",

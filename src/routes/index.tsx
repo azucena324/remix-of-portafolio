@@ -16,16 +16,17 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Vicky Andino | Editora de Video Creativa" },
+      { title: "Victoria Andino | Editora de Video Creativa" },
       {
         name: "description",
         content:
-          "Portafolio de Vicky Andino, editora de video: TikTok, Reels, Shorts, anuncios, lyrics animados, informes, páginas web y gestión de redes sociales.",
+          "Portafolio de Victoria Andino, editora de video: TikTok, Reels, Shorts, anuncios, lyrics animados, informes, páginas web y gestión de redes sociales.",
       },
-      { property: "og:title", content: "Vicky Andino | Editora de Video Creativa" },
+      { property: "og:title", content: "Victoria Andino | Editora de Video Creativa" },
       {
         property: "og:description",
-        content: "Ediciones que conectan con tu audiencia. Portafolio de edición de video creativa.",
+        content:
+          "Ediciones, anuncios y páginas web que conectan con tu audiencia. Portafolio de edición de video creativa.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
