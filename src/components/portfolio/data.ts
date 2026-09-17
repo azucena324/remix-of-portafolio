@@ -29,6 +29,7 @@ export const SKILLS = [
       "Creación y sincronización de lyrics animados",
       "Uso de IA para voces y recursos creativos",
       "Diseño y edición de imágenes en Canva y Affinity",
+      "Creación y publicación de páginas web",
       "Corrección de color y transiciones dinámicas",
       "Dominio de las herramientas de Office (Word, Excel, PowerPoint)",
       "Motion graphics: animaciones, textos y elementos en movimiento",
@@ -52,6 +53,7 @@ export const SKILLS = [
 export const TOOLS = [
   "CapCut (celular y PC)",
   "Alight Motion",
+  "DaVinci Resolve",
   "Herramientas de edición para PC",
   "Affinity",
   "Inteligencia Artificial",

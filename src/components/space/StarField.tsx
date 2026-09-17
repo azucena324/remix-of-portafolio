@@ -30,6 +30,9 @@ export function StarField() {
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    // En pantallas táctiles no hay mouse: el punto de luz vaga solo por la pantalla.
+    const isTouch = window.matchMedia("(pointer: coarse)").matches;
+    let touched = false;
 
     let width = 0;
     let height = 0;
@@ -86,8 +89,14 @@ export function StarField() {
     const onMove = (e: PointerEvent) => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
+      if (e.pointerType !== "mouse") touched = true;
     };
     const onClick = (e: PointerEvent) => {
+      if (e.pointerType !== "mouse") {
+        touched = true;
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+      }
       ripples.push({ x: e.clientX, y: e.clientY, r: 0, life: 1 });
       if (ripples.length > 6) ripples.shift();
     };
@@ -97,6 +106,12 @@ export function StarField() {
 
     const render = () => {
       t += 0.006;
+      if (isTouch && !touched) {
+        mouse.x = width / 2 + Math.cos(t * 1.1) * width * 0.32;
+        mouse.y = height / 2 + Math.sin(t * 1.7) * height * 0.3;
+        pointer.tx = Math.sin(t * 0.8) * 0.55;
+        pointer.ty = Math.cos(t * 0.6) * 0.45;
+      }
       pointer.x += (pointer.tx - pointer.x) * 0.045;
       pointer.y += (pointer.ty - pointer.y) * 0.045;
 
