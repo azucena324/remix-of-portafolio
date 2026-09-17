@@ -48,7 +48,7 @@ export function Contact() {
           <Reveal>
             <div className="glass-panel flex h-full flex-col justify-between gap-8 rounded-3xl p-7 sm:p-9">
               <p className="text-base leading-relaxed text-foreground/90">
-                {PROFILE.tagline}. Escríbeme y conversemos sobre tu próximo video.
+                {PROFILE.tagline}. Escríbeme y conversemos sobre tu próximo proyecto.
               </p>
               <div className="grid gap-3">
                 <a
