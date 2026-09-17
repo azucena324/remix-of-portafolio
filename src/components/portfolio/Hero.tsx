@@ -120,6 +120,11 @@ export function Hero() {
             onPointerMove={onMove}
             onPointerEnter={() => setHovering(true)}
             onPointerLeave={onLeave}
+            onPointerDown={(e) => {
+              setHovering(true);
+              onMove(e);
+            }}
+            onPointerUp={onLeave}
             style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
             className="absolute inset-0 flex items-center justify-center"
           >
