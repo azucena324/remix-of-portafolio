@@ -1,3 +1,9 @@
+import thumbnailTerror from "@/assets/youtube-miniatura-terror.png";
+import thumbnailRun from "@/assets/youtube-miniatura-corre.png";
+import thumbnailChristmas from "@/assets/youtube-miniatura-navidad.webp";
+import characterSurvivor from "@/assets/personaje-superviviente.png";
+import characterPortrait from "@/assets/personaje-retrato.webp";
+
 export const PROFILE = {
   name: "Victoria Andino",
   role: "Editora de videos",
@@ -95,7 +101,21 @@ export const EDIT_VIDEOS: EditVideo[] = [
   },
 ];
 
-export const PROJECTS = [
+export type Project = {
+  id: string;
+  label: string;
+  title: string;
+  summary: string;
+  detail: string;
+  tech: string[];
+  link: string | null;
+  works: string[];
+  images?: Array<{ src: string; alt: string }>;
+  decorations?: Array<{ src: string; alt: string }>;
+  videoEmbed?: string;
+};
+
+export const PROJECTS: Project[] = [
   {
     id: "p1",
     label: "Proyecto 01",
@@ -131,6 +151,40 @@ export const PROJECTS = [
     tech: ["Diseño web", "Desarrollo de páginas", "Contenido institucional", "Publicación en línea"],
     link: "https://instituto-san-juan-bosco.vercel.app/",
     works: [],
+  },
+  {
+    id: "p4",
+    label: "Proyecto 04",
+    title: "Miniaturas personalizadas para YouTube",
+    summary:
+      "Diseños personalizados para videos de Roblox, con escenas llamativas y un personaje propio.",
+    detail:
+      "Creé miniaturas personalizadas para YouTube con escenas de terror, acción y suspenso. También diseñé imágenes del personaje para acompañar y decorar el contenido de los videos.",
+    tech: ["Miniaturas de YouTube", "Composición visual", "Edición de imágenes", "Diseño de personajes"],
+    link: null,
+    works: [],
+    images: [
+      { src: thumbnailTerror, alt: "Miniatura personalizada de Roblox con escena de terror" },
+      { src: thumbnailRun, alt: "Miniatura personalizada de Roblox con personajes corriendo" },
+      { src: thumbnailChristmas, alt: "Miniatura personalizada de Roblox con escena navideña de suspenso" },
+    ],
+    decorations: [
+      { src: characterSurvivor, alt: "Diseño pixelado del personaje Superviviente" },
+      { src: characterPortrait, alt: "Retrato del personaje de cabello blanco" },
+    ],
+  },
+  {
+    id: "p5",
+    label: "Proyecto 05",
+    title: "Diapositiva animada en PowerPoint",
+    summary:
+      "Presentación creada en PowerPoint y convertida en video para mostrarla de forma dinámica.",
+    detail:
+      "Diseñé una presentación animada en PowerPoint y la preparé en formato de video para que pueda verse directamente desde mi portafolio.",
+    tech: ["PowerPoint", "Diapositivas animadas", "Diseño de presentación", "Edición de video"],
+    link: null,
+    works: [],
+    videoEmbed: "https://drive.google.com/file/d/1zafyqRpFpId5xJdI6s6B_Rp4xdEdVOFO/preview",
   },
 ];
 
