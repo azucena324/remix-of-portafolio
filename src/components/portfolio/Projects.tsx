@@ -43,11 +43,7 @@ export function Projects() {
               >
                 <div className="pointer-events-none absolute -right-16 -top-16 size-56 nebula-blob opacity-0 transition-opacity duration-500 group-hover:opacity-80" />
                 <div className="relative">
-                  {p.videoEmbed ? (
-                    <div className="mb-6 flex aspect-video items-center justify-center overflow-hidden rounded-2xl border border-border bg-secondary/40">
-                      <Youtube className="size-12 text-primary transition-transform duration-500 group-hover:scale-110" />
-                    </div>
-                  ) : previewImages(p).length > 0 ? (
+                  {previewImages(p).length > 0 ? (
                     <div className="mb-6 grid grid-cols-3 gap-2 overflow-hidden rounded-2xl">
                       {previewImages(p).map((image) => (
                         <img
@@ -149,22 +145,6 @@ export function Projects() {
                         className="aspect-square w-full rounded-xl object-cover"
                       />
                     ))}
-                  </div>
-                </div>
-              )}
-              {current.videoEmbed && (
-                <div>
-                  <p className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                    Ver presentación en video
-                  </p>
-                  <div className="aspect-video overflow-hidden rounded-xl border border-border bg-secondary/40">
-                    <iframe
-                      src={current.videoEmbed}
-                      title="Diapositiva animada en PowerPoint"
-                      allow="autoplay; fullscreen"
-                      allowFullScreen
-                      className="h-full w-full"
-                    />
                   </div>
                 </div>
               )}

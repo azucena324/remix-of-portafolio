@@ -10,7 +10,7 @@ export const PROFILE = {
   tagline: "Ediciones, anuncios y diseño de páginas",
   subject: "Edición de Video Creativa",
   intro:
-    "Soy Victoria, una apasionada de la edición de video desde pequeña. Me encanta transformar clips en historias creativas, usando colores, ritmo y emoción para conectar con las personas.",
+    "Soy Victoria, apasionada por la edición de video y el diseño. Me gusta transformar ideas en contenido visual creativo, combinando ritmo, color y atención al detalle. También realizo edición de fotografías, anuncios, presentaciones, contenido digital y páginas web, adaptándome a las necesidades y estilo de cada proyecto.",
   email: "azucenaandino91@gmail.com",
   youtube: "https://www.youtube.com/@syxmusic-o1e",
   whatsapp: "https://wa.link/rh8q9u",
@@ -112,7 +112,6 @@ export type Project = {
   works: string[];
   images?: Array<{ src: string; alt: string }>;
   decorations?: Array<{ src: string; alt: string }>;
-  videoEmbed?: string;
 };
 
 export const PROJECTS: Project[] = [
@@ -173,19 +172,6 @@ export const PROJECTS: Project[] = [
       { src: characterPortrait, alt: "Retrato del personaje de cabello blanco" },
     ],
   },
-  {
-    id: "p5",
-    label: "Proyecto 05",
-    title: "Diapositiva animada en PowerPoint",
-    summary:
-      "Presentación creada en PowerPoint y convertida en video para mostrarla de forma dinámica.",
-    detail:
-      "Diseñé una presentación animada en PowerPoint y la preparé en formato de video para que pueda verse directamente desde mi portafolio.",
-    tech: ["PowerPoint", "Diapositivas animadas", "Diseño de presentación", "Edición de video"],
-    link: null,
-    works: [],
-    videoEmbed: "https://drive.google.com/file/d/1zafyqRpFpId5xJdI6s6B_Rp4xdEdVOFO/preview",
-  },
 ];
 
 export const TIMELINE = [
@@ -219,7 +205,7 @@ export const SERVICES = [
   },
   {
     title: "Anuncios publicitarios",
-    text: "Anuncios sencillos y dinámicos para presentar productos.",
+    text: "Creación de anuncios dinámicos y atractivos para presentar productos, servicios o promociones de forma clara y visual.",
     icon: "megaphone",
   },
   {
@@ -234,7 +220,7 @@ export const SERVICES = [
   },
   {
     title: "Diseño y edición de imágenes",
-    text: "Diseño básico en Canva y edición de imágenes.",
+    text: "Diseño de contenido visual en Canva y edición de imágenes, adaptados a las necesidades y estilo de cada proyecto.",
     icon: "image",
   },
   {

@@ -8,3 +8,8 @@
 - [x] Galería en teléfono restaurada a una tarjeta por fila
 - [x] Añadir miniaturas de YouTube e imágenes del personaje solo en Mis proyectos
 - [x] Añadir presentación de PowerPoint como video integrado en Mis proyectos
+- [x] Quitar el proyecto y video de la diapositiva de PowerPoint
+- [x] "Mis trabajos": dejar solo los anuncios (fuera la música)
+- [x] "Sobre mí": título ahora "Un poco sobre mí"
+- [x] Contacto: título ahora "¿Listo para crear algo?"
+- [x] Actualizar textos de servicios (Canva y anuncios) y la presentación personal

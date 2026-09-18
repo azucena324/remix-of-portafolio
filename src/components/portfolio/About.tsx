@@ -34,7 +34,7 @@ export function About() {
   return (
     <section id="sobre-mi" className="relative px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
-        <SectionTitle eyebrow="Sobre mí" title="Historias hechas con ritmo y color" />
+        <SectionTitle eyebrow="Sobre mí" title="Un poco sobre mí" />
 
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <Reveal className="relative">

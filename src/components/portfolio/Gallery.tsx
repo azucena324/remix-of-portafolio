@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Reveal, SectionTitle } from "./Reveal";
-import { WORKS, WORK_CATEGORIES } from "./works";
+import { GALLERY_WORKS, WORK_CATEGORIES } from "./works";
 import { ChevronLeft, ChevronRight, ExternalLink, Maximize2, X } from "lucide-react";
 
 export function Gallery() {
@@ -8,7 +8,7 @@ export function Gallery() {
   const [index, setIndex] = useState<number | null>(null);
 
   const items = useMemo(
-    () => (filter === "Todos" ? WORKS : WORKS.filter((w) => w.category === filter)),
+    () => (filter === "Todos" ? GALLERY_WORKS : GALLERY_WORKS.filter((w) => w.category === filter)),
     [filter],
   );
 

@@ -115,4 +115,7 @@ export const WORKS: Work[] = [
   },
 ];
 
-export const WORK_CATEGORIES = ["Todos", "Música", "Anuncios"] as const;
+export const WORK_CATEGORIES = ["Todos", "Anuncios"] as const;
+
+// En "Mis trabajos" solo se muestran los anuncios publicitarios.
+export const GALLERY_WORKS = WORKS.filter((w) => w.category === "Anuncios");
