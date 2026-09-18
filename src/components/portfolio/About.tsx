@@ -41,9 +41,11 @@ export function About() {
             <span className="absolute -left-3 -top-3 size-1.5 rounded-full bg-lilac animate-pulse-glow" />
             <span className="absolute -right-2 top-1/3 size-1 rounded-full bg-primary animate-pulse-glow" />
             <div className="glass-panel flex h-full flex-col rounded-3xl p-7 sm:p-10">
-              <p className="text-base leading-relaxed text-foreground/90 sm:text-lg">
-                {PROFILE.intro}
-              </p>
+              <div className="space-y-4 text-base leading-relaxed text-foreground/90 sm:text-lg">
+                {PROFILE.about.map((paragraph) => (
+                  <p key={paragraph.slice(0, 28)}>{paragraph}</p>
+                ))}
+              </div>
               <div className="mt-8 flex flex-wrap gap-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">
                 <span className="rounded-full border border-border px-4 py-2">
                   {PROFILE.role}
