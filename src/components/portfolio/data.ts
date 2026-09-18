@@ -173,19 +173,6 @@ export const PROJECTS: Project[] = [
       { src: characterPortrait, alt: "Retrato del personaje de cabello blanco" },
     ],
   },
-  {
-    id: "p5",
-    label: "Proyecto 05",
-    title: "Diapositiva animada en PowerPoint",
-    summary:
-      "Presentación creada en PowerPoint y convertida en video para mostrarla de forma dinámica.",
-    detail:
-      "Diseñé una presentación animada en PowerPoint y la preparé en formato de video para que pueda verse directamente desde mi portafolio.",
-    tech: ["PowerPoint", "Diapositivas animadas", "Diseño de presentación", "Edición de video"],
-    link: null,
-    works: [],
-    videoEmbed: "https://drive.google.com/file/d/1zafyqRpFpId5xJdI6s6B_Rp4xdEdVOFO/preview",
-  },
 ];
 
 export const TIMELINE = [
