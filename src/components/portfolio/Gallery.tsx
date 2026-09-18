@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Reveal, SectionTitle } from "./Reveal";
-import { WORKS, WORK_CATEGORIES } from "./works";
+import { GALLERY_WORKS, WORK_CATEGORIES } from "./works";
 import { ChevronLeft, ChevronRight, ExternalLink, Maximize2, X } from "lucide-react";
 
 export function Gallery() {

@@ -10,7 +10,7 @@ export const PROFILE = {
   tagline: "Ediciones, anuncios y diseño de páginas",
   subject: "Edición de Video Creativa",
   intro:
-    "Soy Victoria, una apasionada de la edición de video desde pequeña. Me encanta transformar clips en historias creativas, usando colores, ritmo y emoción para conectar con las personas.",
+    "Soy Victoria, apasionada por la edición de video y el diseño. Me gusta transformar ideas en contenido visual creativo, combinando ritmo, color y atención al detalle. También realizo edición de fotografías, anuncios, presentaciones, contenido digital y páginas web, adaptándome a las necesidades y estilo de cada proyecto.",
   email: "azucenaandino91@gmail.com",
   youtube: "https://www.youtube.com/@syxmusic-o1e",
   whatsapp: "https://wa.link/rh8q9u",

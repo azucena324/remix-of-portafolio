@@ -42,7 +42,7 @@ export function Contact() {
   return (
     <section id="contacto" className="relative px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
-        <SectionTitle eyebrow="Contacto" title="Edición y creatividad" />
+        <SectionTitle eyebrow="Contacto" title="¿Listo para crear algo?" />
 
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
