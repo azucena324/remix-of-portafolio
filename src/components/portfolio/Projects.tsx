@@ -18,6 +18,15 @@ export function Projects() {
   const current = PROJECTS.find((p) => p.id === openId) ?? null;
   const currentWorks = (current?.works ?? []).map(workById).filter(Boolean);
 
+  const previewImages = (project: (typeof PROJECTS)[number]) => {
+    if (project.images?.length) return project.images.slice(0, 3);
+    return (project.works ?? [])
+      .slice(0, 3)
+      .map(workById)
+      .filter((work): work is NonNullable<typeof work> => Boolean(work))
+      .map((work) => ({ src: work.image, alt: work.title }));
+  };
+
   return (
     <section id="proyectos" className="relative px-5 py-24 sm:px-8">
       <div className="mx-auto max-w-6xl">
@@ -32,21 +41,23 @@ export function Projects() {
               >
                 <div className="pointer-events-none absolute -right-16 -top-16 size-56 nebula-blob opacity-0 transition-opacity duration-500 group-hover:opacity-80" />
                 <div className="relative">
-                  <div className="mb-6 flex gap-2 overflow-hidden rounded-2xl">
-                    {(p.works ?? []).slice(0, 3).map((wid) => {
-                      const w = workById(wid);
-                      if (!w) return null;
-                      return (
+                  {p.videoEmbed ? (
+                    <div className="mb-6 flex aspect-video items-center justify-center overflow-hidden rounded-2xl border border-border bg-secondary/40">
+                      <Youtube className="size-12 text-primary transition-transform duration-500 group-hover:scale-110" />
+                    </div>
+                  ) : previewImages(p).length > 0 ? (
+                    <div className="mb-6 grid grid-cols-3 gap-2 overflow-hidden rounded-2xl">
+                      {previewImages(p).map((image) => (
                         <img
-                          key={wid}
-                          src={w.image}
-                          alt={w.title}
+                          key={image.src}
+                          src={image.src}
+                          alt={image.alt}
                           loading="lazy"
-                          className="h-28 flex-1 rounded-xl object-cover transition-transform duration-500 group-hover:scale-[1.03] sm:h-36"
+                          className="aspect-video w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                         />
-                      );
-                    })}
-                  </div>
+                      ))}
+                    </div>
+                  ) : null}
                   <span className="text-[0.65rem] font-semibold uppercase tracking-[0.35em] text-primary">
                     {p.label}
                   </span>
@@ -78,7 +89,7 @@ export function Projects() {
       </div>
 
       <Dialog open={!!current} onOpenChange={(v) => !v && setOpenId(null)}>
-        <DialogContent className="glass-panel max-w-lg rounded-3xl border-border text-foreground">
+        <DialogContent className="glass-panel max-h-[90svh] max-w-4xl overflow-y-auto rounded-3xl border-border text-foreground">
           {current && (
             <>
               <DialogHeader>
@@ -101,6 +112,58 @@ export function Projects() {
                       className="h-24 w-full rounded-xl object-cover"
                     />
                   ))}
+                </div>
+              )}
+              {current.images && current.images.length > 0 && (
+                <div>
+                  <p className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                    Miniaturas de YouTube
+                  </p>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {current.images.map((image, imageIndex) => (
+                      <img
+                        key={image.src}
+                        src={image.src}
+                        alt={image.alt}
+                        loading="lazy"
+                        className={`aspect-video w-full rounded-xl object-cover ${imageIndex === 2 ? "sm:col-span-2" : ""}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
+              {current.decorations && current.decorations.length > 0 && (
+                <div>
+                  <p className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                    Diseño del personaje
+                  </p>
+                  <div className="grid grid-cols-2 gap-3">
+                    {current.decorations.map((image) => (
+                      <img
+                        key={image.src}
+                        src={image.src}
+                        alt={image.alt}
+                        loading="lazy"
+                        className="aspect-square w-full rounded-xl object-cover"
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
+              {current.videoEmbed && (
+                <div>
+                  <p className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                    Ver presentación en video
+                  </p>
+                  <div className="aspect-video overflow-hidden rounded-xl border border-border bg-secondary/40">
+                    <iframe
+                      src={current.videoEmbed}
+                      title="Diapositiva animada en PowerPoint"
+                      allow="autoplay; fullscreen"
+                      allowFullScreen
+                      className="h-full w-full"
+                    />
+                  </div>
                 </div>
               )}
               <div>
