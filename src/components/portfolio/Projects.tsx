@@ -152,22 +152,6 @@ export function Projects() {
                   </div>
                 </div>
               )}
-              {current.videoEmbed && (
-                <div>
-                  <p className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                    Ver presentación en video
-                  </p>
-                  <div className="aspect-video overflow-hidden rounded-xl border border-border bg-secondary/40">
-                    <iframe
-                      src={current.videoEmbed}
-                      title="Diapositiva animada en PowerPoint"
-                      allow="autoplay; fullscreen"
-                      allowFullScreen
-                      className="h-full w-full"
-                    />
-                  </div>
-                </div>
-              )}
               <div>
                 <p className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
                   Tecnologías y técnicas

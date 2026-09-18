@@ -8,7 +8,7 @@ export function Gallery() {
   const [index, setIndex] = useState<number | null>(null);
 
   const items = useMemo(
-    () => (filter === "Todos" ? WORKS : WORKS.filter((w) => w.category === filter)),
+    () => (filter === "Todos" ? GALLERY_WORKS : GALLERY_WORKS.filter((w) => w.category === filter)),
     [filter],
   );
 

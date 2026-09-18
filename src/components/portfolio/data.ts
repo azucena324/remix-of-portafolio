@@ -219,7 +219,7 @@ export const SERVICES = [
   },
   {
     title: "Anuncios publicitarios",
-    text: "Anuncios sencillos y dinámicos para presentar productos.",
+    text: "Creación de anuncios dinámicos y atractivos para presentar productos, servicios o promociones de forma clara y visual.",
     icon: "megaphone",
   },
   {
@@ -234,7 +234,7 @@ export const SERVICES = [
   },
   {
     title: "Diseño y edición de imágenes",
-    text: "Diseño básico en Canva y edición de imágenes.",
+    text: "Diseño de contenido visual en Canva y edición de imágenes, adaptados a las necesidades y estilo de cada proyecto.",
     icon: "image",
   },
   {
