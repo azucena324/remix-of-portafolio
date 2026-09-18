@@ -115,6 +115,23 @@ export function Hero() {
           <div className="absolute inset-0 rounded-full border border-border animate-drift" />
           <div className="absolute inset-6 rounded-full border border-primary/30" />
           <div className="absolute inset-14 rounded-full nebula-blob animate-float-slow" />
+          {/* halo suave detrás de la foto */}
+          <div className="absolute inset-0 m-auto size-64 rounded-full bg-primary/25 blur-3xl sm:size-72" />
+          {/* anillo de luz giratorio */}
+          <div
+            className="absolute inset-0 m-auto size-52 animate-[spin_9s_linear_infinite] rounded-full sm:size-60"
+            style={{
+              background:
+                "conic-gradient(from 90deg, transparent 0deg, hsl(var(--primary) / 0.9) 60deg, transparent 130deg, transparent 200deg, hsl(var(--lilac) / 0.85) 260deg, transparent 320deg)",
+              WebkitMask:
+                "radial-gradient(farthest-side, transparent calc(100% - 4px), black calc(100% - 3px))",
+              mask: "radial-gradient(farthest-side, transparent calc(100% - 4px), black calc(100% - 3px))",
+            }}
+          />
+          {/* punto orbitando alrededor */}
+          <div className="absolute inset-0 animate-[spin_16s_linear_infinite]">
+            <span className="absolute left-1/2 top-[9%] size-2 -translate-x-1/2 rounded-full bg-lilac shadow-[0_0_14px_3px_hsl(var(--lilac)/0.8)]" />
+          </div>
           <motion.div
             ref={cardRef}
             onPointerMove={onMove}
@@ -128,7 +145,7 @@ export function Hero() {
             style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            <div className="glass-panel relative flex size-44 flex-col items-center justify-center overflow-hidden rounded-full text-center glow-soft transition-shadow duration-300 sm:size-52">
+            <div className="glass-panel relative flex size-44 flex-col items-center justify-center overflow-hidden rounded-full text-center ring-2 ring-primary/40 glow-strong transition-shadow duration-300 sm:size-52">
               {HERO_PHOTO ? (
                 <img
                   src={HERO_PHOTO}
