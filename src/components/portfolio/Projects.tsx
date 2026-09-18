@@ -16,7 +16,9 @@ const workById = (id: string) => WORKS.find((w) => w.id === id);
 export function Projects() {
   const [openId, setOpenId] = useState<string | null>(null);
   const current = PROJECTS.find((p) => p.id === openId) ?? null;
-  const currentWorks = (current?.works ?? []).map(workById).filter(Boolean);
+  const currentWorks = (current?.works ?? [])
+    .map(workById)
+    .filter((work): work is NonNullable<typeof work> => Boolean(work));
 
   const previewImages = (project: (typeof PROJECTS)[number]) => {
     if (project.images?.length) return project.images.slice(0, 3);
@@ -105,9 +107,9 @@ export function Projects() {
                 <div className="grid grid-cols-3 gap-2">
                   {currentWorks.map((w) => (
                     <img
-                      key={w!.id}
-                      src={w!.image}
-                      alt={w!.title}
+                      key={w.id}
+                      src={w.image}
+                      alt={w.title}
                       loading="lazy"
                       className="h-24 w-full rounded-xl object-cover"
                     />
