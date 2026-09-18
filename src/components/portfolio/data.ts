@@ -112,7 +112,6 @@ export type Project = {
   works: string[];
   images?: Array<{ src: string; alt: string }>;
   decorations?: Array<{ src: string; alt: string }>;
-  videoEmbed?: string;
 };
 
 export const PROJECTS: Project[] = [
